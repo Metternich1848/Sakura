@@ -4,8 +4,6 @@ Tooplate 2137 Barista
 
 https://www.tooplate.com/view/2137-barista-cafe
 
-*/
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -541,7 +539,7 @@ strong {
   /*border-radius: var(--border-radius-medium);*/
   border-radius: 50%;
   content: "";
-  position: relative;
+  position: absolute;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg);
