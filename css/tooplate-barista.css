@@ -543,8 +543,8 @@ strong {
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg);
-  width: 425px;
-  height: 423px;
+  width: 50%;
+  height: 50%;
   pointer-events: none;
 }
 
