@@ -42,8 +42,45 @@
             img.rounded-corners {
                 border-radius: 30px;
                 border: 4px solid pink;
-                }           
+                }  
 
+/* Popup Start */
+.popup {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: transparent;
+            display: none;
+        }
+        .popup-content {
+            background-color: #FFB6C1;
+            opacity: 0.9;
+            margin: 10% auto;
+            padding: 20px;
+            border: transparent;
+            width: 30%;
+            font-weight: bolder;
+            border-radius: 30px;
+            border: 4px solid pink;
+        }
+        .popup-content button {
+            display: block;
+            margin: 10px auto;
+            color:#FFB6C1;
+            background-color: #FF69B4; /* Pink */
+            cursor: pointer;
+            border-radius: 16px;
+
+        }
+        .show {
+            display: block;
+        }
+
+/* Popup End */
         </style>
 
         
@@ -161,8 +198,6 @@ Bootstrap 5 HTML CSS Template
 
                                 <p style="text-align:justify;color:white;font-family:Georgia;font-size:130%;">Commonly known as Hanami(はなみ/花見）in Japanese, cherry blossom festivals are significant traditions that are held all over Japan every spring. From mid-March to mid-April, thousands of people flock to parks and gardens to enjoy the fleeting beauty of Sakura (さくら/桜). Friends and families huddle down under blooming cherry trees with homemade food and drinks. Hanami Dango (花見団子), Sakura Mochi (桜餅) and Matcha (抹茶) are the most popular foods during flower-viewing picnics. </p>
 
-                                <p style="text-align:justify;color:white;font-family:Georgia;font-size:130%;"> Since cherry trees only bloom in early spring and its bloom period often last no more than two weeks, they are always regarded as a symbol of transience and nobleness. Although cherry is not the national flower of Japan, it is widely adored by Japanese general public. Today, Hanami acts as an annual celebration to appreciate the temporal beauty of nature and to welcome the arrival of spring.</p>
-
                                 <a href="#barista-team" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4">Meet Baristas</a>
                             </div>
 
@@ -263,7 +298,7 @@ Bootstrap 5 HTML CSS Template
                     <div class="container">
                         <div class="row align-items-center">
 
-                            <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
+                            <!--<div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
                                 
                                 <b><em style="font-size:170%;color:black">ひめじじょう</em></b>
                                 <h2 style="font-family:標楷體;color:black">姫路城</h4>
@@ -273,7 +308,7 @@ Bootstrap 5 HTML CSS Template
                                 </div>
 
                                 <a href="#barista-team" class="smoothscroll btn custom-btn custom-border-btn mt-3 mb-4">Meet Baristas</a>
-                            </div>
+                            </div>-->
 
                             <div class="col-lg-6 col-12">
                                 <div class="ratio ratio-1x1">
@@ -282,8 +317,19 @@ Bootstrap 5 HTML CSS Template
                                     
 
                                     <div class="about-video-info d-flex flex-column">
-                                        <h4 class="mt-auto" style="text-align:right;color:yellow">ひめじじょう</h4>
-                                        <h2 style="text-align:right;color:yellow;font-family:標楷體;">姫路城</h2>
+                                        <!--<h4 class="mt-auto" style="text-align:right;color:yellow">ひめじじょう</h4>
+                                        <h2 style="text-align:right;color:yellow;font-family:標楷體;">姫路城</h2>-->
+                                        <p style="text-align:right;color:red;font-family:標楷體;font-size:60px" class="d-inline-block"><b>
+                                            <button id="myButton" type="button" class="btn btn-danger rounded-pill" style="height:60px;width:130px">姫路城</button>
+                                        </b></p>
+                                        <div id="myPopup" class="popup">
+                                            <div class="popup-content corner">
+                                                <h1 style="color:white;font-family:標楷體;font-size:40px">姫路城(ひめじじょう)</h1>
+                                                <p style="text-align: justify;color:#C71585;"><strong>Crowned as a World Heritage Site by UNESCO, Himeji Castle is famous for its elegant white appearance and impressive size. Regarded as a national treasure, Himeji Castle is the most well-preserved example of a medieval fortress architecture in all of Japan. Over a thousand cherry trees around the castle bloom spectacularly every year from late March to mid-April, making the celebrated castle one of the best spots in Japan to appreciate cherry blossoms in spring. </strong></p>
+                                                <img class="corner" src="" alt="">    
+                                                <button id="closePopup">Close</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -445,7 +491,7 @@ Bootstrap 5 HTML CSS Template
 
                             <div class="col-lg-6 col-12">
                             <!--<div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">-->
-                                <iframe title="Sakura2024" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=da64da1d-2f6b-4b02-8d48-51cf2a6868b9&autoAuth=true&ctid=765e19b9-bc2a-4e54-b769-b6ef8846ac93" frameborder="0" allowFullScreen="true"></iframe>
+                                <iframe title="Sakura2024" width="900" height="560.25" src="https://app.powerbi.com/view?r=eyJrIjoiN2M4OGQ4OGItNTg1MS00M2Y3LTgyYjgtNTMzYzIzZWRjNDMyIiwidCI6Ijc2NWUxOWI5LWJjMmEtNGU1NC1iNzY5LWI2ZWY4ODQ2YWM5MyIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
                             </div>
 
                         </div>
@@ -701,5 +747,22 @@ Bootstrap 5 HTML CSS Template
     }
 </script>
 <!--End: Sakura Petals Falling-->
+
+    <!-- Popup Start -->
+    <script>
+        myButton.addEventListener("click", function () {
+            myPopup.classList.add("show");
+        });
+        closePopup.addEventListener("click", function () {
+            myPopup.classList.remove("show");
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup) {
+                myPopup.classList.remove("show");
+            }
+        });
+        
+        </script>
+<!-- Popup End -->
     </body>
 </html>
