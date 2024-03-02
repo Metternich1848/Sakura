@@ -62,6 +62,7 @@ div.grid div.field button:focus {
     transition: .5s;
     font-size: 40px;
     line-height: 40px;
+    color:gold;
 }
 
 .but1:hover {
