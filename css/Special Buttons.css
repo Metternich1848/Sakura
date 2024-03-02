@@ -1,0 +1,73 @@
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+div.grid {
+    padding: 10px;
+    background-color: #b89467;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px
+}
+
+div.grid div.field {
+    background-color: black;
+    display: flex;
+    position: relative;
+    height: 220px;
+    color: aliceblue;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center
+}
+
+div.grid div.field h1 {
+    display: inline;
+    position: absolute;
+    padding: 2px 20px 10px 6px;
+    align-self: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    border-bottom: 1px solid #7c7000;
+    left: 0;
+    background-color: #0586b1;
+    border-bottom-right-radius: 100%
+}
+
+div.grid div.field button {
+    background-color: unset;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-size: 15px;
+    width: 155px;
+    border: unset;
+    border-radius: unset;
+    cursor: pointer;
+    transform: translateY(9px)
+}
+
+div.grid div.field button:focus {
+    outline: 0
+}
+*/
+.but1 {
+    background: linear-gradient(0deg, #FFB6C1, #FF69B4);
+    border-radius: 20px;
+    border: 2px #FFA07A;
+    transition: .5s;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.but1:hover {
+    background: radial-gradient(#FFB6C1, #FF69B4);
+    box-shadow: 0 1px 10px 1px #FFA07A;
+    letter-spacing: 5px;
+    font-size: 40px;
+    line-height: 40px;
+}
