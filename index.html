@@ -91,121 +91,21 @@
 /* Popup End */
 
 /* Start of Square Photos */
-.column {
-    float: left;
-    width: 100%;
-    height: 500px;
+.square-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+    max-width: 500px;
 }
 
-.gallery img {
-    float: left;
-    width: 80%;
-    margin-bottom: 3%;
-    border-radius: 10px;
-    opacity: 0.83;
+.square img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
 }
+
 /* End of Square Photos */
-
-/* Start of Lower Part */
-.gallery img:hover {
-    opacity: 1;
-}
-
-.gallery {
-    margin-top: 2em;
-}
-
-.topimg {    
-    overflow: hidden;
-    width: 100%;
-    max-width: 788px;
-    margin-top:2em;
-}
-
-.topimg img {
-    width: 100%;
-    max-width: 588px;
-    margin-top: -1vw;
-}
-
-
-.gallery .topimg {
-    max-width: 646px;
-    height: 7vw;
-    width: 90%;
-    border-radius: 10px;
-    opacity: 1;
-}
-/* End of Start of Lower Part */
-
-/* Start: CSS of Square Photos */
-@media screen and (max-width: 1380px) {
-    .column {
-        width: 47%;
-        padding-left: 10%;
-    }
-
-    h1 {
-        font-size: 396% !important;
-    }    
-}    
-
-@media screen and (max-width: 1100px) {
-    .column {
-        width: 48%;
-        padding-left: 8%;
-    }
-}    
-
-@media screen and (max-width: 950px) {    
-    * {
-        font-size: 99%;
-    }
-
-    .row {
-        overflow: hidden;
-    }
-
-    .column {
-        width: 100%;
-        padding-right: 10%;
-        padding-left: 15%;
-    }
-
-    .secol {
-        padding-right: 6%;
-        padding-left: 10%;
-    }
-
-    .ficol h1, .ficol h2 {
-        margin-left: -25px;
-    }
-
-    .column .first {
-        display: block !important;
-        width: 100vw;
-        margin: 0;
-        margin-left: -20%;
-        overflow: hidden;
-        margin-bottom: -1.5em;
-        background: #09697d;
-    }
-    .column .first img {
-        width: 100%;
-        margin-top: -3vw;
-        filter: brightness(1.1) saturate(1.6);
-        opacity: 0.9;
-    }
-
-    .gallery .topimg {
-        height: 21vw;    
-    }
-
-    .seegal { 
-        display: block;    
-    }
-}
-/* End: CSS of Square Photos */
 
         </style>
 
@@ -601,18 +501,33 @@ Bootstrap 5 HTML CSS Template
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-12">
-                                    <article class="column">
-                                        <section class="fs gallery">
-                                            <a href='images/bali-sekumpul-vodopad.jpg'><img src="images/bali-sekumpul-vodopad-200x200.jpg"></a> 
-                                            <a href="images/bali-ubud-nocni-ulice.jpg"><img src="images/bali-ubud-nocni-ulice-200x200.jpg"></a>
-                                            <a href='images/bali-Tegalalang-ryzoviste.jpg'><img src="images/bali-Tegalalang-ryzoviste-200x200.jpg"></a> 
-                                            <a href='images/bali-tukad-cepung-vodopad.jpg'><img src="images/bali-tukad-cepung-vodopad-200x200.jpg"></a>
-                                            <a href='images/lombok-selong-belanak-buvoli.jpg'><img src="images/lombok-selong-belanak-buvoli-200x200.jpg"></a> 
-                                            <a href='images/lombok-sendang-gile-vodopad.jpg'><img src="images/lombok-sendang-gile-vodopad-200x200.jpg"></a>
-                                            
-                                            <dt class="topimg"><a href="images/bali-uluwatu-chram.jpg"><img src="images/bali-uluwatu-chram-650x342.jpg"></a></dt>
-                                        </section>
-                                    </article>     
+                                    <div class="square-container">
+
+                                        <div class="square">
+                                          <img src="images/bali-sekumpul-vodopad-200x200.jpg" alt="">
+                                        </div>
+                                      
+                                        <div class="square">
+                                          <img src="images/bali-sekumpul-vodopad-200x200.jpg" alt="">
+                                        </div>
+                                      
+                                        <div class="square">
+                                          <img src="images/bali-sekumpul-vodopad-200x200.jpg" alt="">
+                                        </div>
+                                        
+                                        <div class="square">
+                                          <img src="images/bali-sekumpul-vodopad-200x200.jpg" alt="">
+                                        </div>
+                                      
+                                        <div class="square">
+                                          <img src="images/bali-sekumpul-vodopad-200x200.jpg" alt="">
+                                        </div>
+                                      
+                                        <div class="square">
+                                          <img src="images/bali-sekumpul-vodopad-200x200.jpg" alt="">
+                                        </div>
+                                      
+                                      </div>
                                 </div>                
     
                             </div>
