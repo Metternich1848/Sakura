@@ -27,6 +27,8 @@
         <link href="css/tooplate-barista.css" rel="stylesheet">
         
         <link href="css/Special Buttons.css" rel="stylesheet">
+
+        <!--<link rel='stylesheet' href='css/sample-gallery.css' type='text/css' media='all'>-->
         <!-- Theme CSS -->
         <!--<link href="css/theme.css" rel="stylesheet">-->
 
@@ -87,6 +89,23 @@
         }
 
 /* Popup End */
+
+/* Start of Square Photos */
+.column {
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+
+.gallery img {
+    float: left;
+    width: 80%;
+    margin-bottom: 3%;
+    border-radius: 6px;
+    opacity: 0.83;
+}
+/* End of Square Photos */
+
         </style>
 
         
@@ -474,22 +493,26 @@ Bootstrap 5 HTML CSS Template
                     <div class="container">
                         <div class="row">   
                             <div class="row align-items-center">
-
+                                
                                 <div class="col-lg-6 col-12">
                                     <div class="ratio ratio-1x1">
                                         <iframe class="corner" width="500" height="500" src="https://www.youtube.com/embed/1pmV7KIulqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                 </div>
-    
-                                <div class="col-lg-5 col-12 mt-4 mt-lg-0 mx-auto">
-                                    
-
-    
-                                        <h3 class="text-white mb-3">花見 (はなみ)</h3>
-        
-                                        <p style="text-align:justify;color:white;font-family:Georgia;font-size:140%;">Commonly known as Hanami(はなみ/花見）in Japanese, cherry blossom festivals are significant traditions that are held all over Japan every spring. Thousands of people flock to parks and gardens to enjoy the fleeting beauty of Sakura (さくら/桜). Friends and families huddle down under blooming cherry trees with homemade food and drinks.</p>
-                                    
-                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <article class="column">
+                                        <section class="fs gallery">
+                                            <a href='images/bali-sekumpul-vodopad.jpg'><img src="images/bali-sekumpul-vodopad-200x200.jpg"></a> 
+                                            <a href="images/bali-ubud-nocni-ulice.jpg"><img src="images/bali-ubud-nocni-ulice-200x200.jpg"></a>
+                                            <a href='images/bali-Tegalalang-ryzoviste.jpg'><img src="images/bali-Tegalalang-ryzoviste-200x200.jpg"></a> 
+                                            <a href='images/bali-tukad-cepung-vodopad.jpg'><img src="images/bali-tukad-cepung-vodopad-200x200.jpg"></a>
+                                            <a href='images/lombok-selong-belanak-buvoli.jpg'><img src="images/lombok-selong-belanak-buvoli-200x200.jpg"></a> 
+                                            <a href='images/lombok-sendang-gile-vodopad.jpg'><img src="images/lombok-sendang-gile-vodopad-200x200.jpg"></a>
+                                            
+                                            <!--<dt class="topimg"><a href="images/bali-uluwatu-chram.jpg"><img src="images/bali-uluwatu-chram-650x342.jpg"></a></dt>-->
+                                        </section>
+                                    </article>     
+                                </div>                
     
                             </div>
                         </div>
