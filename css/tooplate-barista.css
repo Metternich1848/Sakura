@@ -603,7 +603,7 @@ strong {
 -----------------------------------------*/
 .about-section {
   /* background-color: var(--secondary-color); */
-  background-color: #FFB6C1;
+  /* background-color: #FFB6C1; */
   position: relative;
   background-image: url("../img/Sakura Rect.jpg");
   background-repeat: no-repeat;
@@ -752,7 +752,12 @@ strong {
   REVIEWS              
 -----------------------------------------*/
 .reviews-section {
-  background-color: rgb(255, 105, 180);
+  /* background-color: rgb(255, 105, 180); */
+  position: relative;
+  background-image: url("../img/Sakura Rect 2.jpg");
+  background-repeat: no-repeat;
+  background-size: 2200px 1320px; 
+  opacity: 1; 
 }
 
 .reviews-block {
