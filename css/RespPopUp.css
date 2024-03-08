@@ -18,7 +18,7 @@ p {
 	z-index: 1;
 	visibility: hidden;
 	opacity: 0;
-	background: rgba( 0, 0, 0, 0.5 );
+	/*background: rgba( 0, 0, 0, 0.5 );*/
 }
 	.avgrund-active .avgrund-cover {
 		visibility: visible;
@@ -37,9 +37,9 @@ p {
 	z-index: 2;
 	padding: 20px;
 
-	background: white;
+	background: #FFB6C1;
 	box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6 );
-	border-radius: 3px;
+	border-radius: 10px;
 
 	-webkit-transform: scale( 0.8 );
 	   -moz-transform: scale( 0.8 );
