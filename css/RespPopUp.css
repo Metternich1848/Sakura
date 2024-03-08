@@ -27,8 +27,8 @@ p {
 
 .avgrund-popup {
 	position: absolute;
-	width: 340px;
-	height: 250px;
+	width: 500px;
+	height: 295px;
 	left: 50%;
 	top: 50%;
 	margin: -130px 0 0 -190px;
@@ -38,8 +38,9 @@ p {
 	padding: 20px;
 
 	background: #FFB6C1;
-	box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6 );
-	border-radius: 10px;
+	opacity: 0.1;
+	/*box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6 );*/
+	border-radius: 20px;
 
 	-webkit-transform: scale( 0.8 );
 	   -moz-transform: scale( 0.8 );
@@ -49,7 +50,7 @@ p {
 }
 	.avgrund-active .avgrund-popup {
 		visibility: visible;
-		opacity: 1;
+		opacity: 0.8;
 
 		-webkit-transform: scale( 1.1 );
 		   -moz-transform: scale( 1.1 );
