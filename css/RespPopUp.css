@@ -5,7 +5,7 @@ h2 {
 
 p {
 
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.32;
 }
 
@@ -27,7 +27,7 @@ p {
 
 .avgrund-popup {
 	position: absolute;
-	width: 380px;
+	width: 370px;
 	height: 375px;
 	left: 50%;
 	top: 50%;
